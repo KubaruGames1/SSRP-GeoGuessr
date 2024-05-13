@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Congratulations!</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="confetti-container"></div>
+
+  <div class="container">
+    <h1>Congratulations!</h1>
+    <p>You guessed <span id="puntuacion"></span> out of <span id="total"></span> zones correctly.</p>
+    <button onclick="window.location.href = 'index.html'">Play again</button> 
+  </div>
+
+  <script src="confetti.js"></script>
+  <script>
+    const puntuacionSpan = document.getElementById("puntuacion");
+    const totalSpan = document.getElementById("total");
+    const params = new URLSearchParams(window.location.search);
+    puntuacionSpan.textContent = params.get("puntuacion");
+    totalSpan.textContent = params.get("total");
+  </script>
+  <footer>
+    <p>&copy; 2024 KubaruGames & SSRP Game.</p>
+    <p>Github: <a href="https://github.com/tu_usuario/tu_repositorio" target="_blank">GitHub Repository</a></p>
+    <p>Game: <a href="https://www.roblox.com/games/3226555017/SCP-Site-Roleplay" target="_blank">Roblox SSRP Game</a></p>
+  </footer>
+</body>
+</html>

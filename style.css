@@ -1,0 +1,175 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #f4f4f4;
+  }
+      
+  /* Encabezado */
+  header {
+    background-color: #171717; /* Color de fondo oscuro */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative; /* Para posicionar el logo de forma absoluta */
+  }
+  
+  #logo {
+    height: 80px;
+    position: absolute; /* Posicionar el logo en la esquina superior izquierda */
+    top: 10px; /* Ajusta la posición vertical según tus preferencias */
+    left: 10px; /* Ajusta la posición horizontal según tus preferencias */
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Sección principal */
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  #map-container {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  #map-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Contenedor de respuesta */
+  #guess-container {
+    display: flex;
+    flex-direction: column; /* Apilar elementos verticalmente */
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 1rem;
+  }
+  
+  #guess-input {
+    padding: 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    margin-bottom: 10px; /* Espacio entre el input y el botón */
+  }
+  
+  #submit-button {
+    background-color: #007bff; /* Azul SCP */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  #submit-button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+  }
+  
+  /* Mensaje de resultado */
+  #result-message {
+    margin-top: 10px; /* Espacio superior al mensaje */
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #result-message.success {
+    color: #28a745; /* Verde éxito */
+  }
+  
+  #result-message.error {
+    color: #dc3545; /* Rojo error */
+  }
+  
+  /* Botones de vistas */
+#buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  button {
+    background-color: #0056b3; /* Azul medio oscuro */
+    color: white; /* Texto blanco */
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #003973; /* Azul más oscuro al pasar el ratón */
+  }
+  
+  /* Pantalla de felicitaciones */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #007bff; /* Azul SCP */
+  }
+  
+  .container p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  /* ... (estilos anteriores) ... */
+
+  /* Pie de página */
+footer {
+    background-color: #222; /* Color de fondo más oscuro */
+    color: #f4f4f4;
+    text-align: center;
+    padding: 1.5rem 1rem; /* Más espacio interior */
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    width: 100%; 
+    bottom: 0; 
+    left: 0; 
+    position: relative; /* Para que no se superponga al contenido */
+  }
+  
+  footer p {
+    margin: 0.5rem 0; /* Espacio entre párrafos */
+  }
+  
+  footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  #confetti-container {
+    /* ... (estilos anteriores para el contenedor del confeti) */
+  }
+  
