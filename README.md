@@ -14,7 +14,7 @@ This is an independent project built with HTML and JavaScript based on the famou
 - [x] Creation of the main structure, final screen and backend
 - [ ] Make the UI with a more modern style and add more functions
 - [x] Add main menu
-- [ ] Add instructions page
+- [x] Add instructions page (Maintenance)
 - [x] Full `CON 1` add.
 - [ ] Full `CON 2` add.
 - [ ] Full `CON X / Lower X` add..
