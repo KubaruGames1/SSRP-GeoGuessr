@@ -1,0 +1,110 @@
+/* Menú principal */
+body {
+    background-color: #121212;
+    color: #f4f4f4;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex; /* Usamos flexbox para alinear y distribuir el contenido */
+    flex-direction: column;
+    min-height: 100vh; /* Aseguramos que el body ocupe toda la altura de la ventana */
+  }
+  
+  #content-wrapper { /* Contenedor para el contenido principal */
+    flex: 1; /* Permite que el contenido se expanda para llenar el espacio disponible */
+  }
+  
+  main {
+    background-image: url("imagenes/menu.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    justify-content: center;
+    padding: 2rem;
+    text-align: left;
+    overflow: hidden;
+    position: relative; /* Para posicionar la imagen de fondo */
+  }
+  
+  .background-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px); /* Efecto de desenfoque (opcional) */
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  button {
+    background-color: #2196F3;
+    color: white;
+    padding: 1.2rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+  
+  button:hover {
+    background-color: #1976D2;
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); 
+  }
+  
+  /* Pie de página */
+  footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f4f4f4;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #2196F3;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  
