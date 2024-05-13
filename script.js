@@ -3,7 +3,8 @@ const buttonsContainer = document.getElementById("buttons-container");
 const guessInput = document.getElementById("guess-input");
 const submitButton = document.getElementById("submit-button");
 const resultMessage = document.getElementById("result-message");
-
+const backgroundMusic = document.getElementById("background-music");
+const volumeSlider = document.getElementById("volume-slider");
 // Zone data (add more zones here)
 const zones = [
   {
@@ -96,7 +97,182 @@ const zones = [
       "imagenes/imagen36.png",
       "imagenes/imagen37.png",
     ]
-  }
+  },
+  {
+    name: "Zone 10",
+    correctAnswer: "armory", 
+    images: [
+      "imagenes/imagen38.png",
+      "imagenes/imagen39.png",
+      "imagenes/imagen40.png",
+      "imagenes/imagen41.png",
+    ]
+  },
+  {
+    name: "Zone 11",
+    correctAnswer: "scp 1139", 
+    images: [
+      "imagenes/imagen42.png",
+      "imagenes/imagen43.png",
+      "imagenes/imagen44.png",
+    ]
+  },
+  {
+    name: "Zone 12",
+    correctAnswer: "scp 207", 
+    images: [
+      "imagenes/imagen45.png",
+      "imagenes/imagen46.png",
+      "imagenes/imagen47.png",
+    ]
+  },
+  {
+    name: "Zone 13",
+    correctAnswer: "scp 330", 
+    images: [
+      "imagenes/imagen48.png",
+      "imagenes/imagen49.png",
+      "imagenes/imagen50.png",
+    ]
+  },
+  {
+    name: "Zone 14",
+    correctAnswer: "scp 999", 
+    images: [
+      "imagenes/imagen51.png",
+      "imagenes/imagen52.png",
+      "imagenes/imagen53.png",
+    ]
+  },
+  {
+    name: "Zone 15",
+    correctAnswer: "scp 1025", 
+    images: [
+      "imagenes/imagen54.png",
+      "imagenes/imagen55.png",
+      "imagenes/imagen56.png",
+    ]
+  },
+  {
+    name: "Zone 16",
+    correctAnswer: "scp 403", 
+    images: [
+      "imagenes/57.png",
+      "imagenes/58.png",
+      "imagenes/59.png",
+    ]
+  },
+  {
+    name: "Zone 17",
+    correctAnswer: "scp 1193", 
+    images: [
+      "imagenes/60.png",
+      "imagenes/61.png",
+      "imagenes/62.png",
+    ]
+  },
+  {
+    name: "Zone 18",
+    correctAnswer: "scp 517", 
+    images: [
+      "imagenes/63.png",
+      "imagenes/64.png",
+      "imagenes/65.png",
+    ]
+  },
+  {
+    name: "Zone 19",
+    correctAnswer: "scp 860", 
+    images: [
+      "imagenes/66.png",
+      "imagenes/67.png",
+      "imagenes/68.png",
+    ]
+  },
+  {
+    name: "Zone 20",
+    correctAnswer: "scp 224", 
+    images: [
+      "imagenes/69.png",
+      "imagenes/70.png",
+      "imagenes/71.png",
+    ]
+  },
+  {
+    name: "Zone 21",
+    correctAnswer: "scp 914", 
+    images: [
+      "imagenes/72.png",
+    ]
+  },
+  {
+    name: "Zone 22",
+    correctAnswer: "scp 087", 
+    images: [
+      "imagenes/73.png",
+      "imagenes/74.png",
+      "imagenes/75.png",
+    ]
+  },
+  {
+    name: "Zone 23",
+    correctAnswer: "con 1", 
+    images: [
+      "imagenes/76.png",
+      "imagenes/77.png",
+      "imagenes/78.png",
+    ]
+  },
+  {
+    name: "Zone 24",
+    correctAnswer: "atrium", 
+    images: [
+      "imagenes/79.png",
+      "imagenes/80.png",
+      "imagenes/81.png",
+    ]
+  },
+  {
+    name: "Zone 25",
+    correctAnswer: "tram line", 
+    images: [
+      "imagenes/82.png",
+      "imagenes/83.png",
+      "imagenes/84.png",
+    ]
+  },
+  {
+    name: "Zone 26",
+    correctAnswer: "sewers", 
+    images: [
+      "imagenes/85.png",
+      "imagenes/86.png",
+      "imagenes/87.png",
+    ]
+  },
+  {
+    name: "Zone 27",
+    correctAnswer: "maintenance", 
+    images: [
+      "imagenes/88.png",
+      "imagenes/89.png",
+      "imagenes/90.png",
+    ]
+  },
+  {
+    name: "Zone 28",
+    correctAnswer: "generators", 
+    images: [
+      "imagenes/91.png",
+    ]
+  },
+  {
+    name: "Zone 29",
+    correctAnswer: "coolant pumps", 
+    images: [
+      "imagenes/92.png",
+    ]
+  },
 ];
 
 let availableZones = [...zones];
@@ -173,4 +349,12 @@ guessInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     verifyAnswer();
   }
+  const backgroundMusic = document.getElementById("background-music");
+
+// Reproducir la música automáticamente al cargar la página
+backgroundMusic.play().catch(error => {
+  console.error("Error al reproducir la música:", error);
+  // Opcional: Mostrar un mensaje al usuario si hay problemas para reproducir la música.
+});
+
 });
