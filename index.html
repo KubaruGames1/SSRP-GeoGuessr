@@ -3,6 +3,7 @@
 <head>
   <title>SCP Site Roleplay GeoGuessr</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,23 +13,20 @@
   </header>
 
   <main>
-    <div id="map-container">
-      <img id="map-image" src="imagenes/imagen1.png" alt="SCP Site">
+    <div class="background-image-container">
+      <img class="background-image" src="imagenes/menu.png" alt="Menu Background">
     </div>
 
-    <div id="guess-container">
-      <input type="text" id="guess-input" placeholder="Enter your guess">
-      <button id="submit-button">Submit</button>
+    <div class="container">
+      <button onclick="window.location.href = 'game.html'">Play</button>
+      <button onclick="window.location.href = 'instructions.html'">Instructions</button>
+      <button onclick="window.location.href = 'update_logs.html'">Update Logs</button>
     </div>
-
-    <div id="result-message"></div>
-    <div id="buttons-container"></div>
   </main>
 
-  <script src="script.js"></script>
   <footer>
     <p>&copy; 2024 KubaruGames & SSRP Game.</p>
-    <p>Github: <a href="https://github.com/tu_usuario/tu_repositorio" target="_blank">GitHub Repository</a></p>
+    <p>Github: <a href="https://github.com/KubaruGames1/SSRP-GeoGuessr" target="_blank">GitHub Repository</a></p>
     <p>Game: <a href="https://www.roblox.com/games/3226555017/SCP-Site-Roleplay" target="_blank">Roblox SSRP Game</a></p>
   </footer>
 </body>
