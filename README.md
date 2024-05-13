@@ -13,7 +13,8 @@ This is an independent project built with HTML and JavaScript based on the famou
 # Roadmap
 - [x] Creation of the main structure, final screen and backend
 - [ ] Make the UI with a more modern style and add more functions
-- [ ] Add main menu, and music
+- [x] Add main menu
+- [x] Add instructions page
 - [ ] Full `CON 1` add.
 - [ ] Full `CON 2` add.
 - [ ] Full `CON X / Lower X` add..
